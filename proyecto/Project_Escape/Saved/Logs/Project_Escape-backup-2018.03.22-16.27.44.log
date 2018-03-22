@@ -1,0 +1,717 @@
+﻿Log file open, 03/22/18 13:23:24
+LogInit:Display: Running engine for game: Project_Escape
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1583414403) SRandInit(1583414403).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.084094
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: D:/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.03.22-12.23.24:440][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.22-12.23.24:440][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.03.22-12.23.24:448][  0]LogInit: Computer: EXTERIOR-6
+[2018.03.22-12.23.24:448][  0]LogInit: User: B1502
+[2018.03.22-12.23.24:448][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.03.22-12.23.24:448][  0]LogInit: High frequency timer resolution =2.648564 MHz
+[2018.03.22-12.23.24:449][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.03.22-12.23.24:449][  0]LogMemory: Platform Memory Stats for Windows
+[2018.03.22-12.23.24:449][  0]LogMemory: Process Physical Memory: 272.96 MB used, 272.96 MB peak
+[2018.03.22-12.23.24:449][  0]LogMemory: Process Virtual Memory: 260.86 MB used, 260.86 MB peak
+[2018.03.22-12.23.24:449][  0]LogMemory: Physical Memory: 7109.85 MB used,  9190.39 MB free, 16300.23 MB total
+[2018.03.22-12.23.24:449][  0]LogMemory: Virtual Memory: 617.43 MB used,  9190.39 MB free, 8388608.00 MB total
+[2018.03.22-12.23.24:495][  0]LogInit: Overriding language with editor language configuration option (en).
+[2018.03.22-12.23.24:495][  0]LogInit: Overriding locale with editor locale configuration option (en).
+[2018.03.22-12.23.25:325][  0]LogD3D11RHI: D3D11 adapters:
+[2018.03.22-12.23.25:340][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 750 Ti' (Feature Level 11_0)
+[2018.03.22-12.23.25:341][  0]LogD3D11RHI:       1993/0/7894 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.03.22-12.23.25:341][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.03.22-12.23.25:346][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.03.22-12.23.25:346][  0]LogD3D11RHI:     GPU DeviceId: 0x1380 (for the marketing name, search the web for "GPU Device Id")
+[2018.03.22-12.23.25:346][  0]LogWindows: EnumDisplayDevices:
+[2018.03.22-12.23.25:346][  0]LogWindows:    0. 'NVIDIA GeForce GTX 750 Ti' (P:1 D:1)
+[2018.03.22-12.23.25:346][  0]LogWindows:    1. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2018.03.22-12.23.25:346][  0]LogWindows:    2. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2018.03.22-12.23.25:346][  0]LogWindows:    3. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2018.03.22-12.23.25:346][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2018.03.22-12.23.25:346][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.03.22-12.23.25:346][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.03.22-12.23.25:347][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.03.22-12.23.25:347][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 750 Ti
+[2018.03.22-12.23.25:347][  0]LogD3D11RHI:   Driver Version: 385.28 (internal:22.21.13.8528, unified:385.28)
+[2018.03.22-12.23.25:347][  0]LogD3D11RHI:      Driver Date: 8-9-2017
+[2018.03.22-12.23.25:347][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.03.22-12.23.25:354][  0]LogD3D11RHI: Async texture creation enabled
+[2018.03.22-12.23.25:368][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.03.22-12.23.25:416][  0]LogShaderCompilers: Guid format shader working directory is -63 characters bigger than the processId version (C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Intermediate/Shaders/WorkingDirectory/6308/).
+[2018.03.22-12.23.25:416][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/B150-2/AppData/Local/Temp/UnrealShaderWorkingDir/D1B222694B21A39DC3F617BE8FA4DF5A/'.
+[2018.03.22-12.23.25:416][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.03.22-12.23.26:273][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.03.22-12.23.26:305][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.03.22-12.23.26:338][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.03.22-12.23.26:370][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.03.22-12.23.26:403][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.03.22-12.23.26:436][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.03.22-12.23.26:468][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.03.22-12.23.26:500][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.03.22-12.23.26:527][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.03.22-12.23.26:558][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.03.22-12.23.26:589][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.03.22-12.23.26:620][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.03.22-12.23.26:652][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.03.22-12.23.26:685][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.03.22-12.23.26:719][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.03.22-12.23.26:783][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.03.22-12.23.26:783][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.03.22-12.23.26:804][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.03.22-12.23.26:868][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.03.22-12.23.26:888][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.03.22-12.23.26:920][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.03.22-12.23.26:953][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.03.22-12.23.26:985][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.03.22-12.23.27:017][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.03.22-12.23.27:017][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.03.22-12.23.27:298][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.03.22-12.23.27:384][  0]LogDerivedDataCache: Loaded boot cache 0.09s 90MB C:/Users/B150-2/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.03.22-12.23.27:384][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/B150-2/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.03.22-12.23.27:384][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.03.22-12.23.27:384][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.03.22-12.23.27:384][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.03.22-12.23.27:384][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.03.22-12.23.27:402][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.03.22-12.23.27:413][  0]LogDerivedDataCache: Using Local data cache path C:/Users/B150-2/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.03.22-12.23.27:423][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.03.22-12.23.27:423][  0]LogSlate: Using Freetype 2.6.0
+[2018.03.22-12.23.27:423][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.22-12.23.27:423][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.22-12.23.27:753][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.22-12.23.27:757][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.03.22-12.23.27:947][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.03.22-12.23.27:973][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.03.22-12.23.28:001][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.03.22-12.23.28:001][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.03.22-12.23.28:001][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.03.22-12.23.28:445][  0]LogNetVersion: Project_Escape , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2145197693)
+[2018.03.22-12.23.28:496][  0]LogAssetRegistry: FAssetRegistry took 0.0240 seconds to start up
+[2018.03.22-12.23.28:521][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 1 prioritized culture(s) in 0.012459 seconds
+[2018.03.22-12.23.28:526][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.03.22-12.23.28:526][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2018.03.22-12.23.28:526][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.03.22-12.23.28:560][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.03.22-12.23.30:296][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.03.22-12.23.30:322][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.03.22-12.23.30:721][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.03.22-12.23.30:991][  0]SourceControl: Info Source control is disabled
+[2018.03.22-12.23.30:992][  0]SourceControl: Info Source control is disabled
+[2018.03.22-12.23.31:021][  0]SourceControl: Info Source control is disabled
+[2018.03.22-12.23.31:048][  0]SourceControl: Info Source control is disabled
+[2018.03.22-12.23.31:438][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.03.22-12.23.31:789][  0]LogEngine: Initializing Engine...
+[2018.03.22-12.23.31:790][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.03.22-12.23.31:994][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.03.22-12.23.31:994][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.03.22-12.23.32:070][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.03.22-12.23.32:078][  0]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.22-12.23.32:093][  0]LogInit: FAudioDevice initialized.
+[2018.03.22-12.23.32:132][  0]LogDerivedDataCache: Saved boot cache 0.04s 90MB C:/Users/B150-2/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.03.22-12.23.32:143][  0]LogInit: Texture streaming: Enabled
+[2018.03.22-12.23.32:196][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.03.22-12.23.32:321][  0]LogInit: Transaction tracking system initialized
+[2018.03.22-12.23.32:492][  0]BlueprintLog: New page: Editor Load
+[2018.03.22-12.23.33:024][  0]LocalizationService: Info Localization service is disabled
+[2018.03.22-12.23.33:417][  0]LogConsoleResponse:Display: 
+[2018.03.22-12.23.33:555][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.03.22-12.23.33:555][  0]LogCook:Display: Mobile HDR setting 1
+[2018.03.22-12.23.34:149][  0]LogFileCache: Scanning file cache for directory 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/' took 0.01s
+[2018.03.22-12.23.34:149][  0]SourceControl: Info Source control is disabled
+[2018.03.22-12.23.34:149][  0]LightingResults: New page: Lighting Build
+[2018.03.22-12.23.34:173][  0]MapCheck: New page: Map Check
+[2018.03.22-12.23.34:173][  0]LightingResults: New page: Lighting Build
+[2018.03.22-12.23.34:780][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.03.22-12.23.35:044][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.03.22-12.23.35:059][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.03.22-12.23.35:091][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 31.883ms to complete.
+[2018.03.22-12.23.35:091][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.942
+[2018.03.22-12.23.35:202][  0]LogCollectionManager: Loaded 0 collections in 0.001343 seconds
+[2018.03.22-12.23.35:290][  0]LogFileCache: Scanning file cache for directory 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/Collections/' took 0.01s
+[2018.03.22-12.23.35:290][  0]LogFileCache: Scanning file cache for directory 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Developers/B1502/Collections/' took 0.01s
+[2018.03.22-12.23.35:290][  0]LogFileCache: Scanning file cache for directory 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Collections/' took 0.01s
+[2018.03.22-12.23.35:290][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2018.03.22-12.23.35:300][  0]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2329 classes and 491 folders.
+[2018.03.22-12.23.35:336][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.03.22-12.23.35:358][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.03.22-12.23.35:384][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2018.03.22-12.23.35:414][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0005 seconds. Added 1 classes and 3 folders.
+[2018.03.22-12.23.35:441][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.03.22-12.23.35:445][  0]LogSlate: Took 0.000093 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.03.22-12.23.35:448][  0]LogSlate: Took 0.000117 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.03.22-12.23.35:452][  0]LogSlate: Took 0.000116 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.03.22-12.23.35:540][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:1).
+[2018.03.22-12.23.35:677][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2018.03.22-12.23.35:722][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2018.03.22-12.23.35:723][  0]LogLoad: (Engine Initialization) Total time: 12.36 seconds
+[2018.03.22-12.23.35:723][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.15 seconds
+[2018.03.22-12.23.35:723][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.03.22-12.23.35:723][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.03.22-12.23.36:062][  0]LogOcInput: OculusInput pre-init called
+[2018.03.22-12.23.36:062][  0]LogHMD: Starting GearVRController plugin
+[2018.03.22-12.23.36:090][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.03.22-12.23.36:148][  0]LogSlate: Took 0.000117 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.22-12.23.36:769][  2]LogAssetRegistry: Asset discovery search completed in 8.2929 seconds
+[2018.03.22-12.23.36:772][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.03.22-12.23.36:772][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000049 seconds (updated 0 objects)
+[2018.03.22-12.23.37:081][  3]LogSlate: Took 0.000252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.22-12.27.40:311][259]LogSlate: Took 0.000110 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.22-12.27.40:332][259]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\B150-2\Desktop\rinhoEsperoQueBueno.fbx)
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: NodeAttribute, ItemCount : 482
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Model, ItemCount : 555
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Geometry, ItemCount : 73
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Material, ItemCount : 1
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Texture, ItemCount : 2
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: AnimationCurveNode, ItemCount : 398
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: CollectionExclusive, ItemCount : 1
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Pose, ItemCount : 1
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Deformer, ItemCount : 58
+[2018.03.22-12.27.40:344][259]LogFbx: ItemName: Video, ItemCount : 2
+[2018.03.22-12.27.40:349][259]LogFbx: Loading FBX Scene from C:\Users\B150-2\Desktop\rinhoEsperoQueBueno.fbx
+[2018.03.22-12.27.40:465][259]LogFbx: FBX Scene Loaded Succesfully
+[2018.03.22-12.27.42:414][259]LogFbx: Loading FBX Scene from C:\Users\B150-2\Desktop\rinhoEsperoQueBueno.fbx
+[2018.03.22-12.27.42:541][259]LogFbx: FBX Scene Loaded Succesfully
+[2018.03.22-12.27.42:574][259]LogFbx: =================================================
+[2018.03.22-12.27.42:574][259]LogFbx: Dumping Node START [Rhino_low2:Group32855] 
+[2018.03.22-12.27.42:574][259]LogFbx: 	Total Deformer Count -1993672192.
+[2018.03.22-12.27.42:574][259]LogFbx: 		[Node 1]  (Type Skin).
+[2018.03.22-12.27.42:574][259]LogFbx: =================================================
+[2018.03.22-12.27.42:574][259]LogFbx: 	Attribute () Type (4).
+[2018.03.22-12.27.42:574][259]LogFbx: 		[Node Attribute Child 1] Rhino_low2:Group32855 (Type Mesh).
+[2018.03.22-12.27.42:574][259]LogFbx: Dumping Node END [Rhino_low2:Group32855]
+[2018.03.22-12.27.42:575][259]LogFbx: =================================================
+[2018.03.22-12.27.42:575][259]LogFbx: Dumping Node START [Rhino_low2:Group32855] 
+[2018.03.22-12.27.42:575][259]LogFbx: 	Total Deformer Count -1993672192.
+[2018.03.22-12.27.42:575][259]LogFbx: 		[Node 1]  (Type Skin).
+[2018.03.22-12.27.42:575][259]LogFbx: =================================================
+[2018.03.22-12.27.42:575][259]LogFbx: 	Attribute () Type (4).
+[2018.03.22-12.27.42:575][259]LogFbx: 		[Node Attribute Child 1] Rhino_low2:Group32855 (Type Mesh).
+[2018.03.22-12.27.42:575][259]LogFbx: Dumping Node END [Rhino_low2:Group32855]
+[2018.03.22-12.27.42:575][259]LogFbx: =================================================
+[2018.03.22-12.27.42:575][259]LogFbx: Dumping Node START [Rhino_low2:Group32855] 
+[2018.03.22-12.27.42:575][259]LogFbx: 	Total Deformer Count -1993672192.
+[2018.03.22-12.27.42:575][259]LogFbx: 		[Node 1]  (Type Skin).
+[2018.03.22-12.27.42:575][259]LogFbx: =================================================
+[2018.03.22-12.27.42:575][259]LogFbx: 	Attribute () Type (4).
+[2018.03.22-12.27.42:575][259]LogFbx: 		[Node Attribute Child 1] Rhino_low2:Group32855 (Type Mesh).
+[2018.03.22-12.27.42:575][259]LogFbx: Dumping Node END [Rhino_low2:Group32855]
+[2018.03.22-12.27.42:587][259]LogFbx: Valid bind pose for Pose (skinCluster16) - Rhino_low2:Group32855
+[2018.03.22-12.27.42:589][259]LogFbx: Triangulating skeletal mesh Rhino_low2:Group32855
+[2018.03.22-12.27.43:614][259]LogFbx:Warning: Bones digested - 75  Depth of hierarchy - 20
+[2018.03.22-12.27.43:859][259]LogSkeletalMesh: Section 0: 7263 vertices, 57 active bones
+[2018.03.22-12.27.45:244][259]LogSlate: Took 0.000104 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.03.22-12.27.45:249][259]LogSkeletalMesh: Section 0: Material=0, 13174 triangles
+[2018.03.22-12.27.45:252][259]LogLinker: Can't find file '/Game/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton'
+[2018.03.22-12.27.45:252][259]LogLinker: Can't find file '/Game/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton'
+[2018.03.22-12.27.45:252][259]LogLinker: Can't find file '/Game/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_PhysicsAsset'
+[2018.03.22-12.27.45:253][259]LogLinker: Can't find file '/Game/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_PhysicsAsset'
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:273][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning Mesh [Geometry have no name] in the fbx file is not reference by any hierarchy node. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2018.03.22-12.27.45:274][259]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+ToesEnd_R  
+MiddleFinger3_R  
+ThumbFinger3_R  
+IndexFinger3_R  
+RingFinger3_R  
+Eye_R  
+EyeEnd_R  
+Jaw_M  
+JawEnd_M  
+HeadEnd_M  
+Eye_L  
+EyeEnd_L  
+MiddleFinger3_L  
+ThumbFinger3_L  
+IndexFinger3_L  
+RingFinger3_L  
+ToesEnd_L  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2018.03.22-12.27.48:022][476]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2018.03.22-12.27.48:146][476]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_6:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2018.03.22-12.27.48:168][476]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_6:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2018.03.22-12.27.48:365][476]LogSlate: Took 0.000119 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.03.22-12.27.48:413][476]LogContentBrowser: Native class hierarchy updated for 'ClothingSystemEditorInterface' in 0.0005 seconds. Added 1 classes and 0 folders.
+[2018.03.22-12.27.48:417][476]LogRenderer: Reallocating scene render targets to support 1208x740 NumSamples 1 (Frame:1).
+[2018.03.22-12.27.49:873][554]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.Actor_1.DebugSkelMeshComponent_1) Already registered. Aborting.
+[2018.03.22-12.27.49:896][554]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_7:PersistentLevel.Actor_1.DebugSkelMeshComponent_1) - call TermArticulated first.
+[2018.03.22-12.29.24:794][545]LogRenderer: Reallocating scene render targets to support 1276x888 NumSamples 1 (Frame:5957).
+[2018.03.22-12.29.47:993][788]LogSavePackage: Save=3.23ms
+[2018.03.22-12.29.47:993][788]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/rinhoEsperoQueBueno_SkeletonDD8F895045E5CBB7C3791DA11818BDA2.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton.uasset'
+[2018.03.22-12.29.47:993][788]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton.uasset
+[2018.03.22-12.29.50:046][898]LogSavePackage: Save=23.45ms
+[2018.03.22-12.29.50:047][898]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/rinhoEsperoQueBueno2498A3FC421C00E6DB104FBD668A68B8.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno.uasset'
+[2018.03.22-12.29.50:048][898]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno.uasset
+[2018.03.22-12.30.06:868][486]Cmd: DELETE
+[2018.03.22-12.30.06:868][486]Cmd: ACTOR DELETE
+[2018.03.22-12.30.06:869][486]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2018.03.22-12.30.06:880][486]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2018.03.22-12.30.11:702][811]LogSavePackage: Save=4.00ms
+[2018.03.22-12.30.11:702][811]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/rinhoEsperoQueBueno_PhysicsAssetF2FF53C0427C06D7112D5CA9E880B65C.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_PhysicsAsset.uasset'
+[2018.03.22-12.30.11:704][811]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_PhysicsAsset.uasset
+[2018.03.22-12.30.11:951][811]LogSavePackage: Save=117.30ms
+[2018.03.22-12.30.11:951][811]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/ThirdPersonExampleMap566B90124C5474A041F628B397C6DFC7.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2018.03.22-12.30.11:954][811]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2018.03.22-12.30.11:978][811]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.263
+[2018.03.22-12.32.14:446][ 77]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_9:PersistentLevel.Actor_2.DebugSkelMeshComponent_2) Already registered. Aborting.
+[2018.03.22-12.32.14:474][ 77]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_9:PersistentLevel.Actor_2.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2018.03.22-12.32.14:764][ 77]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2018.03.22-12.32.16:138][164]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.Actor_3.DebugSkelMeshComponent_5) Already registered. Aborting.
+[2018.03.22-12.32.16:163][164]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_13:PersistentLevel.Actor_3.DebugSkelMeshComponent_5) - call TermArticulated first.
+[2018.03.22-12.32.17:673][230]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_14:PersistentLevel.Actor_4.DebugSkelMeshComponent_6) Already registered. Aborting.
+[2018.03.22-12.32.17:699][230]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_14:PersistentLevel.Actor_4.DebugSkelMeshComponent_6) - call TermArticulated first.
+[2018.03.22-12.38.44:390][746]LogSavePackage: Save=2.31ms
+[2018.03.22-12.38.44:390][746]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/rinhoEsperoQueBueno_SkeletonAF21059C49F9AF591BA66EB621CC5B28.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton.uasset'
+[2018.03.22-12.38.44:391][746]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton.uasset
+[2018.03.22-12.38.57:385][538]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_15:PersistentLevel.Actor_5.DebugSkelMeshComponent_7) Already registered. Aborting.
+[2018.03.22-12.38.57:409][538]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_15:PersistentLevel.Actor_5.DebugSkelMeshComponent_7) - call TermArticulated first.
+[2018.03.22-12.39.14:571][774]LogContentBrowser:Verbose: The majority of assets in the view are of type: Skeleton
+[2018.03.22-12.39.17:596][100]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonWalk.ThirdPersonWalk
+[2018.03.22-12.39.17:608][100]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/ThirdPersonWalk.ThirdPersonWalk
+[2018.03.22-12.39.29:754][420]LogTemp: Repeting last play command: Selected Viewport
+[2018.03.22-12.39.29:787][420]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.03.22-12.39.29:787][420]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.22-12.39.29:787][420]PIE: New page: PIE session: ThirdPersonExampleMap (Mar 22, 2018, 2:39:29 PM)
+[2018.03.22-12.39.29:787][420]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2018.03.22-12.39.29:804][420]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017389s)
+[2018.03.22-12.39.29:805][420]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.03.22-12.39.29:805][420]LogPlayLevel: PIE: World Init took: (0.000788s)
+[2018.03.22-12.39.29:806][420]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.018513s)
+[2018.03.22-12.39.29:820][420]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.22-12.39.29:827][420]LogInit: FAudioDevice initialized.
+[2018.03.22-12.39.29:867][420]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2018.03.22-12.39.29:877][420]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2018.03.22-13.39.29
+[2018.03.22-12.39.29:879][420]LogWorld: Bringing up level for play took: 0.008430
+[2018.03.22-12.39.29:926][420]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2018.03.22-12.39.29:927][420]LogLevel: ActivateLevel /Game/Levels/UEDPIE_0_Nivel1 1 1 0
+[2018.03.22-12.39.29:927][420]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.905
+[2018.03.22-12.39.29:927][420]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.03.22-12.39.30:047][422]LogLevel: ActivateLevel /Game/Levels/UEDPIE_0_Nivel2 1 1 0
+[2018.03.22-12.39.30:086][423]LogLevel: ActivateLevel /Game/Levels/UEDPIE_0_Nivel3 1 1 0
+[2018.03.22-12.39.32:080][650]LogBlueprintUserMessages: [Rinho_743] 170.0
+[2018.03.22-12.40.20:331][389]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.03.22-12.40.20:384][389]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2018.03.22-12.40.32:050][458]LogSavePackage: Save=9.84ms
+[2018.03.22-12.40.32:050][458]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/UE4_Mannequin_SkeletonFA54DAA84EDB002FBB2992B7E742C032.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.uasset'
+[2018.03.22-12.40.32:054][458]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Mannequin/Character/Mesh/UE4_Mannequin_Skeleton.uasset
+[2018.03.22-12.40.32:067][458]LogSavePackage: Save=3.31ms
+[2018.03.22-12.40.32:067][458]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/rinhoEsperoQueBueno_Skeleton4EBA12564208BFCE917F46A1AADD58C9.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton.uasset'
+[2018.03.22-12.40.32:068][458]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Personajes/Rinoceronte/mesh/rinhoEsperoQueBueno_Skeleton.uasset
+[2018.03.22-12.40.32:232][458]LogSavePackage: Save=101.76ms
+[2018.03.22-12.40.32:232][458]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/ThirdPersonExampleMap6E980E5A451D5727589148B263727C32.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2018.03.22-12.40.32:235][458]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2018.03.22-12.40.32:259][458]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.188
+[2018.03.22-12.40.32:289][458]LogSavePackage: Save=10.99ms
+[2018.03.22-12.40.32:289][458]LogSavePackage: Moving 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/ThirdPersonWalk96A4DB8441BC8AFB296251A3DDE97EC4.tmp' to 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/ThirdPersonWalk.uasset'
+[2018.03.22-12.40.32:290][458]LogSavePackage:Display: Finished SavePackage C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/ThirdPersonWalk.uasset
+[2018.03.22-12.40.40:361][391]Cmd: QUIT_EDITOR
+[2018.03.22-12.40.40:416][391]LogExit: Preparing to exit.
+[2018.03.22-12.40.41:491][391]LogExit: Editor shut down
+[2018.03.22-12.40.41:496][391]LogExit: Transaction tracking system shut down
+[2018.03.22-12.40.41:552][391]LogObj: Freed 0b from 0 cluster array pools.
+[2018.03.22-12.40.41:552][391]LogExit: Object subsystem successfully closed.
+[2018.03.22-12.40.41:575][391]LogD3D11RHI: Shutdown
+[2018.03.22-12.40.41:575][391]LogD3D11RHI: CleanupD3DDevice
+[2018.03.22-12.40.41:688][391]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (536)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module AnimationEditor (534)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module ClothingSystemEditorInterface (532)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module SkeletonEditor (530)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (528)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (526)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module CrashTracker (524)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module WorldBrowser (522)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2018.03.22-12.40.41:694][391]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2018.03.22-12.40.41:694][391]LogDirectoryWatcher: A directory notification for 'D:/UE_4.16/FeaturePacks/' was aborted.
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2018.03.22-12.40.41:695][391]LogDirectoryWatcher: A directory notification for 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Collections/' was aborted.
+[2018.03.22-12.40.41:695][391]LogDirectoryWatcher: A directory notification for 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/Developers/B1502/Collections/' was aborted.
+[2018.03.22-12.40.41:695][391]LogDirectoryWatcher: A directory notification for 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Saved/Collections/' was aborted.
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module Media (471)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2018.03.22-12.40.41:695][391]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2018.03.22-12.40.41:696][391]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2018.03.22-12.40.42:217][391]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2018.03.22-12.40.42:218][391]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2018.03.22-12.40.42:258][391]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2018.03.22-12.40.42:260][391]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2018.03.22-12.40.42:261][391]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2018.03.22-12.40.42:502][391]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2018.03.22-12.40.42:503][391]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2018.03.22-12.40.42:505][391]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2018.03.22-12.40.42:505][391]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2018.03.22-12.40.42:506][391]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2018.03.22-12.40.42:606][391]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2018.03.22-12.40.42:706][391]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2018.03.22-12.40.42:706][391]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2018.03.22-12.40.42:706][391]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2018.03.22-12.40.42:706][391]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2018.03.22-12.40.42:706][391]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2018.03.22-12.40.42:706][391]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2018.03.22-12.40.42:709][391]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2018.03.22-12.40.42:709][391]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2018.03.22-12.40.42:709][391]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2018.03.22-12.40.42:709][391]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2018.03.22-12.40.42:710][391]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2018.03.22-12.40.42:710][391]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2018.03.22-12.40.42:711][391]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2018.03.22-12.40.42:712][391]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2018.03.22-12.40.42:718][391]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2018.03.22-12.40.42:718][391]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2018.03.22-12.40.42:718][391]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2018.03.22-12.40.42:718][391]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2018.03.22-12.40.42:718][391]LogModuleManager: Shutting down and abandoning module Core (164)
+[2018.03.22-12.40.42:718][391]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2018.03.22-12.40.42:785][391]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.03.22-12.40.42:785][391]LogDirectoryWatcher: A directory notification for 'C:/Users/B150-2/Documents/GitHub/Project-Escape-Proyecto-Interdisciplinar-CoCo-School-/proyecto/Project_Escape/Content/' was aborted.
+[2018.03.22-12.40.42:785][391]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.03.22-12.40.42:785][391]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2018.03.22-12.40.42:789][391]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2018.03.22-12.40.42:789][391]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2018.03.22-12.40.42:789][391]LogModuleManager: Shutting down and abandoning module PhysXFormats (156)
+[2018.03.22-12.40.42:790][391]LogModuleManager: Shutting down and abandoning module MeshUtilities (154)
+[2018.03.22-12.40.42:790][391]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (153)
+[2018.03.22-12.40.42:790][391]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (151)
+[2018.03.22-12.40.42:790][391]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (149)
+[2018.03.22-12.40.42:790][391]LogModuleManager: Shutting down and abandoning module LevelSequence (146)
+[2018.03.22-12.40.42:790][391]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2018.03.22-12.40.42:832][391]LogDerivedDataCache: Shutdown
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2018.03.22-12.40.42:832][391]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.03.22-12.40.42:833][391]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.03.22-12.40.42:833][391]LogOnline:Display: Unloading online subsystem: NULL
+[2018.03.22-12.40.42:834][391]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.03.22-12.40.42:834][391]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.03.22-12.40.42:834][391]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.03.22-12.40.42:834][391]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BADE0C8BB-4877-0FC0-441F-C984DFBAB81D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=edce06cf4e6c0ff04235878c727fc347%7C7a211806f70b4509a5be2640357744fc%7C6d00a9ca-9492-44ef-bfa0-25da197858db&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.03.22-12.40.42:840][391]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2018.03.22-12.40.42:843][391]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.03.22-12.40.42:846][391]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.03.22-12.40.42:862][391]LogExit: Exiting.
+[2018.03.22-12.40.42:888][391]Log file closed, 03/22/18 13:40:42
